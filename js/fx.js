@@ -1,0 +1,1 @@
+const FX={confetti(){if(window.confetti&&!P.s.calm)confetti({particleCount:80,spread:70,origin:{y:.7}})},beep(){},bounce(el){if(el){el.animate([{transform:'translateY(0)'},{transform:'translateY(-10px)'},{transform:'translateY(0)'}],{duration:300})}}};
