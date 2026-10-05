@@ -1,0 +1,1 @@
+const C='matstart-v1',F=['./','./index.html','./css/style.css','./js/app.js','./js/topics.js','./js/progress.js','./js/quiz.js','./js/mascot.js','./js/fx.js','./manifest.json'];self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(F))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
